@@ -6,20 +6,6 @@ let pricesSwiper = new Swiper(".prices__slider", {
         nextEl: ".prices__slider-next",
         prevEl: ".prices__slider-prev",
     },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
-    // breakpoints: {
-    //     775: {
-    //         spaceBetween: 30,
-    //         slidesPerView: 3,
-    //     },
-    //     931: {
-    //         spaceBetween: 30,
-    //         slidesPerView: 4,
-    //     },
-    // },
 });
 let instantlySwiper = new Swiper(".instantly__slider", {
     loop: false,

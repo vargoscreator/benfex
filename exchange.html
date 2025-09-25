@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Exchange Bitcoin to Tether (TRC20) (BTC to USDT)</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Corinthia:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__start">
+                    <a class="header__logo" href="index.html">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__links">
+                        <a href="#">Buy</a>
+                        <a href="#">Sell</a>
+                    </div>
+                    <p class="header__autentifications"><a href="#">Login</a> / <a href="#">Register</a></p>
+                </div>
+                <button class="header__burger"></button>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-top">
+                    <a class="header__content-logo" href="index.html">
+                        <img src="img/logo-2.svg" alt="">
+                    </a>
+                    <a class="header__content-login" href="#">Login</a>
+                    <button class="header__content-close"></button>
+                </div>
+            </div>
+            <div class="header__content-bottom">
+                <div class="container">
+                    <div class="header__content-inner">
+                        <nav class="header__menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Buy </a>
+                                </li>
+                                <li>
+                                    <a href="#">Sell </a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Company </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="exchange">
+            <div class="container">
+                <div class="exchange__inner">
+                    <ul class="breatcrumpts">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="buy-cryptocurrency.html">Buy</a>
+                        </li>
+                        <li>
+                            <a href="exchange.html">Bitcoin (BTC)</a>
+                        </li>
+                    </ul>
+                    <h1 class="exchange__title title">Exchange Bitcoin to Tether (TRC20) (BTC to USDT)</h1>
+                    <div class="exchange__warning">
+                        <div class="exchange__warning-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                <path d="M25.4349 23.1037L15.7817 5.1769C15.0975 3.90588 13.2748 3.90588 12.59 5.1769L2.93731 23.1037C2.78875 23.3795 2.71426 23.6894 2.72114 24.0026C2.728 24.3159 2.81598 24.6221 2.9765 24.8913C3.137 25.1604 3.36455 25.3833 3.63694 25.5382C3.90933 25.6933 4.21724 25.7749 4.53061 25.7754H23.8388C24.1525 25.7754 24.4607 25.6941 24.7335 25.5393C25.0063 25.3845 25.2342 25.1617 25.395 24.8925C25.5559 24.6232 25.6441 24.3169 25.6511 24.0033C25.6581 23.6897 25.5837 23.3798 25.4349 23.1037ZM14.1862 23C13.9621 23 13.7431 22.9336 13.5567 22.8091C13.3705 22.6846 13.2253 22.5077 13.1395 22.3007C13.0538 22.0938 13.0314 21.866 13.0751 21.6462C13.1188 21.4264 13.2268 21.2246 13.3852 21.0662C13.5436 20.9078 13.7454 20.7999 13.9652 20.7561C14.1848 20.7124 14.4126 20.7349 14.6196 20.8207C14.8266 20.9063 15.0036 21.0516 15.1281 21.2378C15.2525 21.4241 15.319 21.6432 15.319 21.8672C15.319 22.1676 15.1996 22.4558 14.9872 22.6682C14.7747 22.8806 14.4866 23 14.1862 23ZM15.4164 11.6067L15.0912 18.5169C15.0912 18.7572 14.9958 18.9877 14.8259 19.1578C14.6558 19.3276 14.4253 19.4231 14.185 19.4231C13.9446 19.4231 13.7142 19.3276 13.5442 19.1578C13.3743 18.9877 13.2787 18.7572 13.2787 18.5169L12.9537 11.6096C12.9463 11.4445 12.9723 11.2797 13.03 11.1249C13.0878 10.9701 13.1761 10.8285 13.2898 10.7086C13.4034 10.5887 13.5401 10.4928 13.6916 10.4268C13.843 10.3608 14.0062 10.326 14.1714 10.3244H14.1833C14.3497 10.3243 14.5142 10.3579 14.6672 10.4232C14.8203 10.4885 14.9584 10.5841 15.0734 10.7043C15.1885 10.8244 15.2779 10.9666 15.3365 11.1223C15.3951 11.278 15.4214 11.444 15.4141 11.6101L15.4164 11.6067Z" fill="#040404"/>
+                            </svg>
+                        </div>
+                        <div class="exchange__warning-content">
+                            <p class="exchange__warning-descr">Sorry, this exchange is currently not available. <br>We suggest using the exchange of other coins. Thank you for your understanding!</p>
+                        </div>
+                    </div>
+                    <div class="exchange__content">
+                        <div class="exchange__phone exchangePhone">
+                            <p class="exchangePhone__reviews"><span>See our <strong>26</strong> reviews on</span> <a href="#" target="_blank"><img src="img/trustpilot.svg" alt=""></a></p>
+                            <form class="exchangePhone__form" action="#">
+                                <div class="exchangePhone__form-box">
+                                    <div class="exchangePhone__form-block">
+                                        <h4 class="exchangePhone__form-title">You <br><span>give</span></h4>
+                                        <div class="exchangePhone__form-select">
+                                            <span class="exchangePhone__form-select--name"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                            <div class="exchangePhone__form-select--content">
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span class="selected-text">btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span class="selected-text">btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span class="selected-text">btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span class="selected-text">btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span class="selected-text">btc</span></span>
+                                            </div>
+                                            <input type="hidden" name="you-give" value="usdt">
+                                        </div>
+                                    </div>
+                                    <input class="exchangePhone__form-input" type="number" name="give-value" placeholder="min 120.49" min="120.49" required>
+                                </div>
+                                <div class="exchangePhone__form-rate">
+                                    <p class="exchangePhone__form-name">Exchange rate</p>
+                                    <button class="exchangePhone__form-rate--btn" type="button"></button>
+                                </div>
+                                <div class="exchangePhone__form-box">
+                                    <div class="exchangePhone__form-block">
+                                        <h4 class="exchangePhone__form-title">You <br><span>get</span></h4>
+                                        <div class="exchangePhone__form-select">
+                                            <span class="exchangePhone__form-select--name"><img src="img/usdt.svg" alt=""> <span class="selected-text">usdt</span></span>
+                                            <div class="exchangePhone__form-select--content">
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span>usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span>btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span>usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span>btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span>usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span>btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span>usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span>btc</span></span>
+                                                <span data-value="usdt"><img src="img/usdt.svg" alt=""> <span>usdt</span></span>
+                                                <span data-value="btc"><img src="img/btc.svg" alt=""> <span>btc</span></span>
+                                            </div>
+                                            <input type="hidden" name="you-give" value="usdt">
+                                        </div>
+                                    </div>
+                                    <input class="exchangePhone__form-input" type="number" name="get-value" placeholder="min 120.49" min="120.49" required>
+                                </div>
+                                <p class="exchangePhone__form-descr">The exchange rate is approximate and may change during the exchange process.</p>
+                                <button class="exchangePhone__form-btn btn" type="submit">Next step <span class="btn-next-icon"></span></button>
+                                <div class="exchangePhone__form-logos">
+                                    <div class="exchangePhone__form-logo">
+                                        <img src="img/payments/1.svg" alt="">
+                                    </div>
+                                    <div class="exchangePhone__form-logo">
+                                        <img src="img/payments/2.svg" alt="">
+                                    </div>
+                                    <div class="exchangePhone__form-logo">
+                                        <img src="img/payments/3.svg" alt="">
+                                    </div>
+                                    <div class="exchangePhone__form-logo">
+                                        <img src="img/payments/4.svg" alt="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="institutional__content">
+                            <h2 class="institutional__title title">VIP & Institutional Clients</h2>
+                            <p class="institutional__descr">For businesses, family offices, and HNW individuals:</p>
+                            <ul class="institutional__list custom-list">
+                                <li>Dedicated account manager</li>
+                                <li>Tailored liquidity solutions</li>
+                                <li>Flexible settlement methods (bank transfer, cash, stablecoins)</li>
+                                <li>Competitive OTC pricing</li>
+                            </ul>
+                            <a class="institutional__btn btn-3" href="#">Contact Us</a>
+                        </div>
+                        <div class="institutional__block">
+                            <div class="institutional__icon">
+                                <img src="img/icons/icon-1.svg" alt="">
+                            </div>
+                            <div class="institutional__icon">
+                                <img src="img/icons/icon-1.svg" alt="">
+                            </div>
+                            <div class="institutional__icon">
+                                <img src="img/icons/icon-1.svg" alt="">
+                            </div>
+                            <div class="institutional__icon">
+                                <img src="img/icons/icon-1.svg" alt="">
+                            </div>
+                            <h3 class="institutional__name">OTC DEALS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topExchanges">
+            <div class="container">
+                <div class="topExchanges__inner">
+                    <h2 class="topExchanges__title">Popular exchanges</h2>
+                    <div class="topExchanges__block">
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                        <a class="topExchanges__item" href="#">
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/btc.svg" alt="">
+                                </div>
+                                <span>BTC</span>
+                            </span>
+                            <span class="topExchanges__item-to"></span>
+                            <span class="topExchanges__item-crypto">
+                                <div class="topExchanges__item-icon">
+                                    <img src="img/usdt.svg" alt="">
+                                </div>
+                                <span>USDT</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="institutional center-institutional">
+            <div class="container">
+                <div class="institutional__inner">
+                    <div class="institutional__box">
+                        <div class="institutional__box-bg">
+                            <img src="img/institutional/bg.svg" alt="">
+                        </div>
+                        <div class="institutional__box-icon"></div>
+                        <h3 class="institutional__box-title">"Do you prefer Telegram?"</h3>
+                        <p class="institutional__box-descr">Use our Libertad bot for fast and secure exchanges</p>
+                        <a class="institutional__box-btn btn-2" href="#">i want to try</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class="buttonUp"></button>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Cryptocurrency</a>
+                        </li>
+                        <li>
+                            <a href="#">Sell Cryptocurrency</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">User Agreement</a>
+                        </li>
+                        <li>
+                            <a href="#">AML Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Referral Program Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="footer__logo" href="index.html">
+                    <img src="img/logo-2.svg" alt="">
+                </a>
+                <div class="footer__box">
+                    <p class="footer__adress">
+                        BENFEX LTD<br>
+                        Regsitration No.<br>
+                        __________<br>
+                        Registered Address: 13 Street, 3d Floor<br>
+                        W1G 0JR<br>
+                        London, UK
+                    </p>
+                    <div class="footer__block">
+                        <p class="footer__online">Online</p>
+                        <a class="footer__tg" href="#" target="_blank">Telegram</a>
+                        <a class="footer__mail" href="mailto:support@benfex.pro">support@benfex.pro</a>
+                        <p class="footer__time">The support service operates: <br>Mon - Sun, 08:00 - 01:00 (UTC+3)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <p class="footer__bestchange">
+                        <img src="img/bestchange.png" alt="">
+                        Automatic exchanges are carried out 24/7
+                    </p>
+                    <div class="footer__bottom-logos">
+                        <div class="footer__bottom-logo">
+                            <img src="img/payments/2-1.svg" alt="">
+                        </div>
+                        <div class="footer__bottom-logo">
+                            <img src="img/payments/2.svg" alt="">
+                        </div>
+                        <div class="footer__bottom-logo">
+                            <img src="img/payments/3.svg" alt="">
+                        </div>
+                        <div class="footer__bottom-logo">
+                            <img src="img/payments/2-4.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="footer__bottom-copy">© 2025 Benfex. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
