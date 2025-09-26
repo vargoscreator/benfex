@@ -1239,7 +1239,7 @@ strong{
     .hero__title span{
         font-size: 90px;
         letter-spacing: -1px;
-        filter: blur(0.845px);
+        filter: blur(0.2px);
     }
     .hero__title span:nth-of-type(1) {
         bottom: -112.003px;
