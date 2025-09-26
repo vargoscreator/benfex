@@ -2793,7 +2793,7 @@ strong{
 }
 @media (max-width: 768px) {
     .footer{
-        border-radius: 20px 20px 0;
+        border-radius: 20px 20px 0 0;
         margin: 80px 16px 0;
     }
     .footer__inner{
